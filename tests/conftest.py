@@ -27,7 +27,7 @@ def mobile_management():
 
     with allure.step('init app session'):
         browser.config.driver = webdriver.Remote(
-            config.browser_url,
+            'http://hub.browserstack.com/wd/hub',
             options=options
         )
 
